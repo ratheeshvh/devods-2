@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "Cloning GitHub repository..."
-                git 'https://github.com/ratheeshvh/devods-2.git'  // Replace with your repo URL
+                git branch:'main',url: 'https://github.com/ratheeshvh/devods-2.git'  // Replace with your repo URL
             }
         }
 
